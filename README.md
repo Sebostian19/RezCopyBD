@@ -35,7 +35,7 @@
 ### Решение 2
 
 2.1. Команды для резервирования данных PostgreSQL:
-```
+
 Команда создания резевной копии БД:
 pg_dump dbname > dumpfile
 
@@ -44,7 +44,7 @@ psql dbname < dumpfile
 или
 pg_restore -d dbname filename
 
-```
+
 2.2. Да, возможно. Необходимо написать скрипт и добавить его в crontab.
 
 ---
@@ -59,7 +59,7 @@ pg_restore -d dbname filename
 ### Решение 3
 
 3.1. Команда инкрементного резервного копирования базы данных MySQL:
-```
+
 mysqldump -flush-logs > dump.sql
 
-```
+
